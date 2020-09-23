@@ -13,4 +13,4 @@ while(input !== "quit"){
     }
     input = prompt("What would you like to do?");
 }
-console.log("ok you quit ")
+console.log("ok you quit ");
