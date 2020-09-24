@@ -5,7 +5,6 @@ var input = prompt("What would you like to do?");
 while(input !== "quit"){
     if(input === "list"){
         listTodo();
-        
     } else if (input === "new") {
         addTodo();
     } else if (input === "delete") {
