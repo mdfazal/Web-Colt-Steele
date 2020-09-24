@@ -4,11 +4,7 @@ var input = prompt("What would you like to do?");
 
 while(input !== "quit"){
     if(input === "list"){
-        console.log("*******");
-        todo.forEach(function(todo, i){
-            console.log(i + ": "+todo);
-        });
-        console.log("*******");
+        listTodo();
         
     } else if (input === "new") {
         var newTodo = prompt("Enter new todo");
@@ -22,3 +18,11 @@ while(input !== "quit"){
     input = prompt("What would you like to do?");
 }
 console.log("ok you quit "); 
+
+function listTodo(){
+    console.log("*******");
+        todo.forEach(function(todo, i){
+            console.log(i + ": "+todo);
+        });
+    console.log("*******");
+}
