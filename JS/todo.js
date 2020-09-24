@@ -7,13 +7,9 @@ while(input !== "quit"){
         listTodo();
         
     } else if (input === "new") {
-        var newTodo = prompt("Enter new todo");
-        todo.push(newTodo);
-        console.log("Added Todo");
+        addTodo();
     } else if (input === "delete") {
-        var index = prompt("Enter index of todo to delete");
-        todo.splice(index, 1);
-        console.log("Deleted Todo");
+        deleteTodo();
     }
     input = prompt("What would you like to do?");
 }
@@ -21,8 +17,18 @@ console.log("ok you quit ");
 
 function listTodo(){
     console.log("*******");
-        todo.forEach(function(todo, i){
-            console.log(i + ": "+todo);
-        });
+    todo.forEach(function(todo, i){
+        console.log(i + ": "+todo);
+    });
     console.log("*******");
+}
+function addTodo(){
+    var newTodo = prompt("Enter new todo");
+    todo.push(newTodo);
+    console.log("Added Todo");
+}
+function deleteTodo(){
+    var index = prompt("Enter index of todo to delete");
+    todo.splice(index, 1);
+    console.log("Deleted Todo");
 }
