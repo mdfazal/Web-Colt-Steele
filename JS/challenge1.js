@@ -34,6 +34,7 @@ function max(arr){
     }
     return ele;
 }
+//**Movie DB */
 var movies = [
     {
         title:"In Bruges",
