@@ -5,3 +5,14 @@ function printReverse(arr){
     }
 }
 printReverse([3,6,2,5]);
+
+//****isUniform() */
+function isUniform(arr){
+    var first = arr[0];
+    for(var i = 0;i<arr.length;i++){
+        if(arr[i] !== first){
+            return false;
+        }
+    }
+    return true;
+}
