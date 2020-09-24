@@ -45,6 +45,11 @@ var movies = [
         hasWatched: false,
         rating: 4.5
     } 
+    {
+        title: "Les Miserable",
+        hasWatched: false,
+        rating: 3.5
+    }
 ]
 movies.forEach(function(movie){
     var result = "You Have ";
