@@ -24,3 +24,13 @@ function sumArray(arr){
     });
     return total;
 }
+
+function max(arr){
+    var ele = arr[0];
+    for (var i= 1;i<arr.length;i++){
+        if(ele<arr[i]){
+            ele = arr[i];
+        }
+    }
+    return ele;
+}
