@@ -24,11 +24,22 @@ for(var i =0;i<squares.length;i++){
     var clickedColor = this.style.backgroundColor;
     //compare color to pickedColor
     if(clickedColor === pickedColor ){
-      alert("Correct");
+      messageDisplay.textContent = "Correct";
+      changeColors(clickedColor);
     } else {
       this.style.backgroundColor = "#232323";
       messageDisplay.textContent = "Try Again";
     }
   });
+
+}
+
+function changeColors(color){
+  //loop through all squares
+  for(var i =0; i< colors.length;i++){
+    //change each other to match given color
+    squares[i].style.backgroundColor = color;
+  }
+  
 
 }
