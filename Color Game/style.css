@@ -1,8 +1,8 @@
-.done{
-    text-decoration: line-through;
-    opacity: 0.5;
+body {
+    background-color: #232323;
 }
 
-.selected{
-    color:green;
+.square{
+    width: 30%;
+    background: purple;
 }
